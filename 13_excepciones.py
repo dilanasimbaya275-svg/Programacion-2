@@ -17,28 +17,27 @@ IndexError
 ZeroDivisionError
 """
 
+
 def calcular_energia(total, cantidad):
     try:
         resultado = total / cantidad
+        return resultado
     except ZeroDivisionError as Error:
-        print("Error: division entre cero")
-        return None
-    except TypeError:
         print("Error: division entre cero")
         return None
     except TypeError:
         print("Error: valores deben ser numericos")
         return None
 
-print("Caso 1:", calcular_energia(100,4))
-print("Caso 2:", calcular_energia(100,0))
-print("Caso 3:", calcular_energia(100,"cuatro"))
+print("Caso 1:", calcular_energia(100, 4))
+print("Caso 2:", calcular_energia(100, 0))
+print("Caso 3:", calcular_energia(100, "cuatro"))
 
 
 print("==========DIAGNÓSTICO R2-D2========== ")
 try:
     energía = int("cuatro")
-    imprimir("energía", energía)
+    ("energía", energía)
 except ValueError: 
     print("Error de lectura")
 else:
