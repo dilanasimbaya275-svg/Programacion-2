@@ -1,0 +1,30 @@
+# SISTEMA Y EDITORES
+.vscode/
+.idea/
+*.swp
+*.log
+.DS_Store
+
+# PYTHON
+__pycache__/
+*.py[cod]
+**/venv/
+**/env/
+**/.venv/
+
+# DJANGO
+**/local_settings.py
+**/*.sqlite3
+**/staticfiles/
+**/media/
+
+# ODOO
+.odoorc
+**/*.pgpass
+**/filestore/
+**/*odoo.conf
+**/*.sql
+**/*.dump
+
+# CREDENCIALES
+**/.env
